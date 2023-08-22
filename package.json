@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "sass --watch src/style/scss/style.scss build/style/style.css"
+    "sass": "sass --watch src/style/scss/style.scss build/style/style.css --style compressed",
+    "uglifyjs": "uglifyjs src/js/script.js -c -o build/js/script.js"
   },
-  "author": "",
+  "author": "Raphael Araujo",
   "license": "ISC"
 }

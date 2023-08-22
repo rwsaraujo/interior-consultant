@@ -1,13 +1,21 @@
+@use "./colors";
+
 * {
   color: inherit;
 }
 
 body {
-  background-color: #181719;
+  background-color: colors.$very-dark-gray;
+}
 
-  .link-active {
-    font-weight: 700;
-    cursor: default;
-    box-shadow: inset 0 -2px #fff;
-  }
+.link-active {
+  font-weight: 700;
+  cursor: default;
+  box-shadow: inset 0 -0.125rem colors.$almost-white;
+}
+
+.container {
+  width: 100%;
+  max-width: 90rem; // 1440px
+  padding: 0 0.625rem;
 }
