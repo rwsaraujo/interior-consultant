@@ -1,0 +1,80 @@
+@use "./colors";
+
+.main {
+  // border: 1px solid yellow;
+  display: flex;
+  justify-content: space-between;
+
+  .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    max-width: 380px;
+
+    h1 {
+      font: 500 3rem/1 "Lora", serif;
+    }
+
+    p {
+      font: 400 1.5rem/1.8125rem "Montserrat", sans-serif;
+    }
+
+    a {
+      font: 700 1.125rem/1 "Montserrat", sans-serif;
+      display: flex;
+      gap: 0.625rem;
+    }
+  }
+
+  .image {
+    max-width: 737px;
+    position: relative;
+
+    img {
+      max-width: 100%;
+    }
+
+    .card {
+      width: 410px;
+      height: 190px;
+      padding: 20px;
+      position: absolute;
+      bottom: -110px;
+      right: 40px;
+      background-color: colors.$very-dark-gray;
+
+      &-profile {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+        margin-bottom: 20px;
+
+        img {
+          max-width: 50px;
+          border-radius: 50%;
+        }
+
+        &__info {
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
+
+          h2 {
+            font: 500 14px/1 "Montserrat", sans-serif;
+          }
+
+          p {
+            font: 500 12px/1 "Montserrat", sans-serif;
+            color: colors.$gray;
+          }
+        }
+      }
+
+      &-text {
+        font: 500 24px/31px "Lora", serif;
+        max-width: 230px;
+      }
+    }
+  }
+}

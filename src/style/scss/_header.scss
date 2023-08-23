@@ -2,20 +2,14 @@
 
 .header {
   height: 6.25rem;
-  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 0.625rem;
 
-  a {
-    text-decoration: none;
-  }
-
   .logo {
     font: 100 0.875rem/1rem "Crimson Pro", serif;
     text-transform: uppercase;
-    color: colors.$almost-white;
     border: 0.0625rem solid colors.$almost-white;
     padding: 0.5rem;
   }
@@ -27,7 +21,6 @@
       list-style: none;
       font: 500 1.125rem/1rem "Montserrat", sans-serif;
       text-transform: capitalize;
-      color: colors.$almost-white;
 
       li {
         a {
@@ -99,7 +92,6 @@
         #hamburger {
           border-top: 2px solid;
           width: 20px;
-          color: colors.$almost-white;
 
           &::after,
           &::before {
