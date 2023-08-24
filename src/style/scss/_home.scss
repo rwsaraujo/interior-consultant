@@ -1,9 +1,11 @@
 @use "./colors";
 
 .main {
-  // border: 1px solid yellow;
   display: flex;
+  gap: 40px;
   justify-content: space-between;
+  padding-top: 100px;
+  padding-bottom: 210px;
 
   .text {
     display: flex;
@@ -74,6 +76,76 @@
       &-text {
         font: 500 24px/31px "Lora", serif;
         max-width: 230px;
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .main {
+    .text {
+      h1 {
+        font: 500 2rem/1 "Lora", serif;
+      }
+
+      p {
+        font: 400 1rem/24px "Montserrat", sans-serif;
+      }
+
+      a {
+        font: 700 1rem/1 "Montserrat", sans-serif;
+      }
+    }
+
+    .image {
+      .card {
+        width: 250px;
+        right: 20px;
+
+        &-profile {
+          gap: 1rem;
+        }
+
+        &-text {
+          font: 500 1rem/1.5rem "Lora", serif;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .main {
+    flex-direction: column;
+
+    .image {
+      display: flex;
+      justify-content: center;
+
+      .card {
+        width: calc(100% - 40px);
+        max-width: 335px;
+        height: 140px;
+        right: unset;
+
+        &-profile {
+          gap: 5px;
+          margin-bottom: 20px;
+
+          img {
+            max-width: 36px;
+          }
+
+          &__info {
+            h2 {
+              font: 500 12px/1 "Montserrat", sans-serif;
+            }
+
+            p {
+              font: 500 10px/1 "Montserrat", sans-serif;
+            }
+          }
+        }
       }
     }
   }
